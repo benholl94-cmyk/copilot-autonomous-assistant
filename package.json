@@ -1,0 +1,26 @@
+{
+  "name": "copilot-autonomous-assistant",
+  "version": "1.0.0",
+  "description": "Lightweight autonomous AI assistant project optimized for iSH Shell on iOS and GitHub Copilot CLI integration.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "cli": "node bin/copilot-ai.js",
+    "install:ish": "bash scripts/install-ish.sh"
+  },
+  "keywords": [
+    "fullstack",
+    "ai",
+    "assistant",
+    "ish",
+    "ios",
+    "copilot"
+  ],
+  "author": "benholl94-cmyk",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

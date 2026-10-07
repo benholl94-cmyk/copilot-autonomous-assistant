@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copilot Autonomous Assistant</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">iSH + Copilot</p>
+          <h1>Autonomous Assistant</h1>
+        </div>
+        <button id="refreshBtn" class="ghost-button">Refresh</button>
+      </header>
+
+      <main class="layout">
+        <section class="panel hero-panel">
+          <div class="status-box">
+            <span class="status-dot"></span>
+            <span>System status: <strong id="statusText">Checking...</strong></span>
+          </div>
+          <h2>Run your local AI workflow</h2>
+          <p>
+            A lightweight fullstack assistant designed for iSH Shell, mobile use, and Copilot-aware task processing.
+          </p>
+          <div class="input-group">
+            <textarea id="promptInput" rows="4" placeholder="Describe a task, issue, or project to build..."></textarea>
+            <button id="runBtn" class="primary-button">Run task</button>
+          </div>
+        </section>
+
+        <section class="panel stats-panel">
+          <h3>System metrics</h3>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span>Total Tasks</span>
+              <strong id="taskCount">0</strong>
+            </div>
+            <div class="stat-card">
+              <span>Knowledge Entries</span>
+              <strong id="knowledgeCount">0</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel output-panel">
+          <h3>Assistant response</h3>
+          <div id="responseBox" class="response-box empty">
+            Your output will appear here.
+          </div>
+        </section>
+
+        <section class="panel task-panel">
+          <h3>Recent tasks</h3>
+          <ul id="taskList" class="task-list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
